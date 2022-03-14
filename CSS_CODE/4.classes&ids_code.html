@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>classes&ids</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=F0QHCvWsNZp82y983lTeOMOr7o-LBy1ZbHC_iwnOQK6rAZqfkKJ6Wnouoni1E02pIOjQC0A9gDF0MqqD38_zVuzZ6ZLb9Ox6qTcH6Kl0IpXV49cTxJZ4EQGgIoQAylNryS6maSHpzlB9xdCYfi_yQhJZpNKgUQ_5hHadvYywOiKKWfv_3CJee5FO8oFcYXY6XztEsauCdvE4XHQ_FZfnAQyEG4_jsBaVo3cKLxoTmlbIdsudoH9_gpDPops-PGeEpN7hujG4_-1NNw9XTPbj9UbnapVL4PCCEuCy58G1vckFA-Jze8xc95lEOp_svJ1SQi59XF2xH7XqqdGMNi2bNUCxOYG-G42RIp0tSuDXlGL1TogN4vx71be9mjWX98sdxycxhCs5F-eOAeyg5gkXx7mGKIXoqEYeILHwRoeTL5q_Liw7bBiu8Re3j2NXbQF5rT8KsUMRiPkMEnZ-row1Ug7Zio6y5QGp8Yb_nURyjXdX4aCqy8ag6W02sissDuYaVnXgi58DRI7z6hlmfrUM8AX5Jdxh46KPqp4DZJIGvd0DjTUVp4aVrmVPe2UtD9AgrXKp1lNCYOda67MdwHcJs2LxjJNvxd4uMKby5V2Tyn2OBzh31JGXeUQdQqZBN3pXSdr_d7NpmCrywfQrUGsdOwFMyzuyTvKvhHSNShw0yEUf4Z-0WvvmdgxkGBYkgIQAtCY-r44d99_m9XSQAQyh1ktmWGqse_Dm1EdE1M9WjzIY7zlTPUAgAMl2-e1HgtRsiSC98BjQgo1RFiQtxXGpEjlbaksh8Nagcyzy0Tnp19Y" charset="UTF-8"></script><style>
+            /*
+            *{
+            box-sizing: border-box;
+            }
+            */
+
+            body, html {width: 100%; height: 100%; margin: 0; padding: 0}
+            #outer {display: flex; width: 100%; height: 100%; flex-direction: column; overflow: hidden;}
+            iframe { flex-grow: 1; border: none; margin: 0; padding: 0; position: relative}
+
+
+
+            #help{
+                position: fixed;
+                bottom: 5px;
+                right: 16px;
+            }
+            
+            
+            #download{
+                position: fixed;
+                bottom: 5px;
+                right: 5px;
+            }
+            
+            
+
+        </style>
+    </head>
+
+    <body>
+        <div id="outer">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="file1" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">4.classes&ids.html</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://completewebdevelopmentcourse.com/2.CSS/4.classes&ids.html" target="_blank">Output</a>
+                </li>
+            </ul>
+            <iframe id="file1_iframe" src="https://completewebdevelopmentcourse.com/2.CSS/4.classes&ids.html.html" allowfullscreen></iframe>
+            
+            <a type="button" class="btn btn-warning" id="download" href="https://completewebdevelopmentcourse.com/2.CSS/4.classes&ids.html.zip" target="_blank">Download Code</a>
+            
+
+        </div>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <script>
+            $("iframe").hide();
+            $('#file1_iframe').show();
+            $("#file1").click(function(){
+                $('iframe').hide();
+                $('#file1_iframe').show();
+            });
+
+        </script>
+    </body>
+
+
+
+
+</html>
