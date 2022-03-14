@@ -1,76 +1,80 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>background</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=VM2ZpgueK8Cku8OcEmPncMgEocUzaGJ362Ng6ApTv1G8gL0Uah-ORNrY_dFWiCrzbn5mYkJ4EzX6kCMOv2Bv9U-KLEvjN7-qGubMUzWy-J7pHVcYLI5d9zgZuAoRRD4IlEx5Uv7phCTVdY4f0iGSKwOraKcdzE7OtoKRgTi06ZkOvSJbZz9QypIQmH066Sz0LmM_DihkRA_e13jMUs8PTSnFFC6i-e0UVl4mS9JUhtKxxLKMd4rglig3GLPJlmpCYdjihR_7-J9tb2xWy9aqi4ODAd_-FTKxR_qVdz-KPmQqVIG6rUOzwKrzKNi4EUvnIee3SC6E0JPQd7OgCJiY7GczHfg4L5mpWUMRRo4PdLSrMMhS23C4NmOxLiuD9IuHpSVirR77nXYs8v6qoiYLGgH5T0pJzZlUptQtOEWqBtWxI9oEHJCeoPxp85m4vAEqJB_Ws9OApvDBejrhIwdOxgMCQ0VLpU5YrWwvty2BtygIDYrs_W8dlvqtXIddQUoyFx36ieyqZYht1QRIF3eDOJRJziG13p6c2YqtsbBMGRj2oj1s6cM-uGJuwYudmNmfni_HMPhjZgWklFvZb5kwxCHC_SZV3kRahCj67tqMht7OJblr7VEyacyXkE5DWRluc-U39oZSrMMosijdEUx5f-FfDLtzzkNUmx0kdDShHWsaB29yELsvOzh9rGGI9SiRDp0q66vZs4o_6KawjFat2OXVpn4AVuT4iwnIvdMrChDzm3iwl1b-DOwA2GCtkfN1ZHEkwiFbHqkJOL48bAbpuMd5Bj12zMvlxlrvXxVvTBc" charset="UTF-8"></script><style>
-            /*
-            *{
-            box-sizing: border-box;
-            }
-            */
-
-            body, html {width: 100%; height: 100%; margin: 0; padding: 0}
-            #outer {display: flex; width: 100%; height: 100%; flex-direction: column; overflow: hidden;}
-            iframe { flex-grow: 1; border: none; margin: 0; padding: 0; position: relative}
-
-
-
-            #help{
-                position: fixed;
-                bottom: 5px;
-                right: 16px;
-            }
-            
-            
-            #download{
-                position: fixed;
-                bottom: 5px;
-                right: 5px;
-            }
-            
-            
-
-        </style>
-    </head>
-
-    <body>
-        <div id="outer">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" id="file1" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">10.background.html</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://completewebdevelopmentcourse.com/2.CSS/10.background.html" target="_blank">Output</a>
-                </li>
-            </ul>
-            <iframe id="file1_iframe" src="https://completewebdevelopmentcourse.com/2.CSS/10.background.html.html" allowfullscreen></iframe>
-            
-            <a type="button" class="btn btn-warning" id="download" href="https://completewebdevelopmentcourse.com/2.CSS/10.background.html.zip" target="_blank">Download Code</a>
-            
-
-        </div>
-
-
-
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-        <script>
-            $("iframe").hide();
-            $('#file1_iframe').show();
-            $("#file1").click(function(){
-                $('iframe').hide();
-                $('#file1_iframe').show();
-            });
-
-        </script>
-    </body>
-
-
-
-
+  <head>
+    <meta charset ="utf-8">
+    <title>
+      Background
+    </title>
+    <style>
+      .bluebox{
+        background-image: url(images/picture.jpg);
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-origin: content-box;
+		color: white;
+		height: 100px;
+		width:auto;
+		padding: 16px;
+		border: 10px #e8c14e ridge;
+		outline-style: solid;
+		outline-color: #bc8df5;
+		outline-width: thick;
+		margin: 20px;
+	  }
+	  .yellowbox{
+		background-image: url(images/picture.jpg);
+		background-size: 50px 50px;
+		background-repeat: no-repeat;
+		background-origin: border-box;
+		/*        background-position: left;
+		*/
+		height: 100px;
+		width: auto;
+		padding: 10px 5px 7px 3em;
+		border-width: 10px 15px 5px 10px;
+		border-color: black green orange yellow;
+		border-style: ridge;
+		margin: 60px 10px 30px 20px;
+	  }
+	  .greenbox{
+		background-color: #31af37;
+		height: 100px;
+		width: 100px;
+		padding: 10px;
+		border-width: 10px;
+		border-style: groove;
+		border-color: #28ccb6;
+		border-radius:80px;
+		margin: 60px 10px;
+	  }
+	  p{
+		margin: 0;
+		background-color: #8bbbbf;
+	  }
+	  
+	</style>
+  </head>
+  
+  <body>
+    <div class="bluebox">
+      <p>
+        Facebook.
+      </p>
+      
+    </div>
+    <div class="yellowbox">
+      <p>
+        Apple.
+      </p>
+      
+    </div>
+    <div class="greenbox">
+      <p>
+        Microsoft.
+      </p>
+      
+    </div>
+  </body>
+  
+  
 </html>

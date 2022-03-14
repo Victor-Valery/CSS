@@ -1,76 +1,65 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>BMborder</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=56sqkWlB2lQhnedLe_mWS4ja2Dycn59WI869N3D9DLYJELgyfqFUEuLiz_2BMnKcL02sVSYKo27V3LThIA5yX2uwwHpgdqH7qKOBB8ntrvfH4TFMjYLXmTJcjY3TnSKusZlvQPFPk-00sB12vPf7wovQq-7y_L-cA7JgbGrBgQJBaciqHiW3ugf_byJW-PDzfTjct89o5nKLxZtYGjuUzKI7_GgFI0QDD-_hSWJGWH8R6L1PQ5DG2ZpdLR68UyQBzMcaDFvQXmitAHbee7kgGUp_3AcpI9HxAHu2fcfSSVBZxOdQ-5K-x4SG_sQQe2rTQn6vzZCXKoMuccTc52vbwFQUrWPolzxkSgpIGPKDzyYzDgzHI-d6XvDAPPAlBH5QNQigw_3PpxTEzNAi9gLDknTHogrDoARq6UUX6jwwWF5wyu_XAREuYl-9HYzwBFDWsYxBDsRkafy82AHgdb0gc1l2kgYt4F7kNd56v8iC4it48GHvxOzFXRjcoQ8xdS8diWDNrcBBqwXln8j582xW0GTET8maM2LHAz3TxfWn09Y6OU8kADgDbBWTvBTWpiNtoUy30shz-9C6EacQKq040HqudE2vgib-MIqvhiOywrM24f4zSjh-iC6BQfI4EbSEzu0vxtONN8wBs09r3XtHYCzTT4Yd3LweGPH--tNgLsDYkMweWiv6MrepRcZeIv5ovXBJM155HzBRQlXThhlEVqKRRpYwL8F9Dj-YVHF1hTWidVqsewdG87tZ9bbpK8PvHAk_2cL8rHuTPJoC8ZqQZlLR-ONMgF9cyHK1hynCajI" charset="UTF-8"></script><style>
-            /*
-            *{
-            box-sizing: border-box;
-            }
-            */
-
-            body, html {width: 100%; height: 100%; margin: 0; padding: 0}
-            #outer {display: flex; width: 100%; height: 100%; flex-direction: column; overflow: hidden;}
-            iframe { flex-grow: 1; border: none; margin: 0; padding: 0; position: relative}
-
-
-
-            #help{
-                position: fixed;
-                bottom: 5px;
-                right: 16px;
-            }
-            
-            
-            #download{
-                position: fixed;
-                bottom: 5px;
-                right: 5px;
-            }
-            
-            
-
-        </style>
-    </head>
-
-    <body>
-        <div id="outer">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" id="file1" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">7.BMborder.html</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://completewebdevelopmentcourse.com/2.CSS/7.BMborder.html" target="_blank">Output</a>
-                </li>
-            </ul>
-            <iframe id="file1_iframe" src="https://completewebdevelopmentcourse.com/2.CSS/7.BMborder.html.html" allowfullscreen></iframe>
-            
-            <a type="button" class="btn btn-warning" id="download" href="https://completewebdevelopmentcourse.com/2.CSS/7.BMborder.html.zip" target="_blank">Download Code</a>
-            
-
-        </div>
-
-
-
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-        <script>
-            $("iframe").hide();
-            $('#file1_iframe').show();
-            $("#file1").click(function(){
-                $('iframe').hide();
-                $('#file1_iframe').show();
-            });
-
-        </script>
-    </body>
-
-
-
-
+  <head>
+    <meta charset ="utf-8">
+    <title>
+      Box Model Border
+    </title>
+    <style>
+      .bluebox{
+        background-color: #3A5795;
+		color: white;
+		height: auto;
+		width:auto;
+		padding: 16px;
+		border: 10px #e8c14e ridge;
+	  }
+	  .yellowbox{
+		background-color: rgb(222, 224, 85);
+		height: auto;
+		width: auto;
+		padding: 10px 5px 7px 3em;
+		border-width: 10px 15px 5px 10px;
+		border-color: black green orange yellow;
+		border-style: ridge;
+	  }
+	  .greenbox{
+		background-color: #31af37;
+		height: 100px;
+		width: 100px;
+		padding: 10px;
+		border-width: 10px;
+		border-style: groove;
+		border-color: #28ccb6;
+		border-radius:80px;
+	  }
+	  p{
+		margin: 0;
+		background-color: #8bbbbf;
+	  }
+    </style>
+  </head>
+  
+  <body>
+    <div class="bluebox">
+      <p>
+        Facebook.
+      </p>
+      
+    </div>
+    <div class="yellowbox">
+      <p>
+        Apple.
+      </p>
+      
+    </div>
+    <div class="greenbox">
+      <p>
+        Microsoft.
+      </p>
+      
+    </div>
+  </body>
+  
+  
 </html>
